@@ -77,6 +77,7 @@
 
 .submit-btn {
     padding-bottom: 2em;
+    padding-left: 1.5em;
 }
 
 #bottom-container {
@@ -114,6 +115,24 @@ h6 {
 
 .credit-link:hover {
     text-decoration: underline;
+}
+
+/* products page */
+
+#products-details-container {
+    margin: 0;
+    padding: 5em 5em;
+    background-color: #ACFFAD;
+}
+
+.products-details {
+    background-color: #71EFA3;
+    margin: 0;
+    padding: 1em 1em;
+}
+
+.products-details-column {
+    padding: 2em 4em;
 }
 
 /* contact-us-page */
