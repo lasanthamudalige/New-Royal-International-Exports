@@ -1,0 +1,135 @@
+/* Nav bar */
+
+#navigation-bar {
+    margin: 0;
+    padding: 2em 5em;
+    background-color: #54436B;
+}
+
+.navbar-heading {
+    font-size: 2rem;
+    color: #54436B;
+}
+
+.nav-item {
+    margin-right: 2em;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+}
+
+/* Title */
+
+#title-container {
+    margin: 0;
+    padding: 3em 5em;
+    background-color: #ACFFAD
+}
+
+.title-image {
+    margin: 1em 0;
+}
+
+.title-text {
+    margin-top: 2em;
+}
+
+.title-heading {
+    font-size: 2.5rem;
+}
+
+.title-info {
+    font-size: 1.2rem;
+    padding-bottom: 1em;
+}
+
+#products-container {
+    margin: 0;
+    padding: 3em 5em;
+    background-color: #71EFA3;
+}
+
+.products-column {
+    margin-bottom: 6em;
+    padding-left: 1.8em;
+}
+
+.products-title {
+    font-size: 2rem;
+    margin-bottom: 2em;
+}
+
+#contact-us-container {
+    margin: 0;
+    padding: 2em 5em;
+    background-color: #ACFFAD;
+}
+
+.contact-us-title {
+    font-size: 2rem;
+    margin: 1.5em 0;
+}
+
+.form-control {
+    margin: 1em;
+}
+
+.submit-btn {
+    padding-bottom: 2em;
+}
+
+#bottom-container {
+    margin: 0;
+    padding: 1em 5em;
+    background-color: #50CB93;
+}
+
+h6 {
+    margin: 1em 0;
+}
+
+.bottom-logo-name {
+    font-size: 3rem;
+    margin: 1em 0;
+}
+
+.bottom-link {
+    text-decoration: none;
+}
+
+.bottom-link:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    margin: 0;
+    padding: 1em 5em;
+    background-color: #50CB93;
+}
+
+.credit-link {
+    text-decoration: none;
+}
+
+.credit-link:hover {
+    text-decoration: underline;
+}
+
+/* contact-us-page */
+
+#middle-container {
+    background-image: url(../Images/pexels-quang-nguyen-vinh-2582652.jpg);
+    background-attachment: scroll;
+    margin: 0;
+    padding: 2em 5em;
+    background-color: #ACFFAD;
+}
+
+.contact-form {
+    color: white;
+}
+
+.contact-us-image {
+    margin-top: 5em;
+}
