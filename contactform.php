@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $phone_number = $_POST['number'];
     $message = $_POST['message'];
 
-    $mailTo = "mail@newroyalinternationalexporters.com";
+    $mailTo = "---email---";
     $headers = "From :" . $mailFrom;
     $txt = "You have received and e-mail from " . $name . "\n\nsubject = " . $subject . "\nphone number = " . $phone_number . "\nmessage = " . $message;
 
