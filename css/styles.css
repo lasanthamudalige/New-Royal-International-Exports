@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Nav bar */
 
 #navigation-bar {
@@ -7,6 +11,7 @@
 }
 
 .navbar-heading {
+    font-family: 'Merriweather', serif;
     font-size: 2rem;
     color: #54436B;
 }
@@ -17,6 +22,64 @@
 
 .nav-link {
     font-size: 1.4rem;
+}
+
+@media (max-width: 1080px) {
+    #navigation-bar {
+        padding: 1em;
+    }
+
+    /* .navbar-heading {
+        margin: 0em;
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    } */
+}
+
+@media (max-width: 720px) {
+    #navigation-bar {
+        padding: 1em;
+    }
+
+    .navbar-heading {
+        margin: 0em;
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #navigation-bar {
+        padding: 1em;
+    }
+
+    .navbar-heading {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #navigation-bar {
+        padding: 0em;
+    }
+    
+    .navbar-heading {
+        font-size: 0.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
 }
 
 /* Title */
@@ -39,6 +102,17 @@
     font-size: 2.5rem;
 }
 
+@media (max-width: 720px) {
+    .title-image {
+        display: none;
+    }
+
+    .title-heading {
+        font-size: 2rem;
+    }
+
+}
+
 .title-info {
     font-size: 1.2rem;
     padding-bottom: 1em;
@@ -51,8 +125,23 @@
 }
 
 .products-column {
-    margin-bottom: 6em;
-    padding-left: 1.8em;
+    margin: 0;
+    padding-bottom: 6em;
+    padding-left: 2em;
+}
+
+@media (max-width: 360px) {
+    #products-container {
+        margin: 0;
+        padding: 1em 4em;
+        background-color: #71EFA3;
+    }
+
+    .products-column {
+        margin: 0;
+        padding-bottom: 6em;
+        padding-left: 1em;
+    }
 }
 
 .products-title {
@@ -72,12 +161,12 @@
 }
 
 .form-control {
-    margin: 1em;
+    margin: 1em 0;
+    border: 0;
 }
 
 .submit-btn {
     padding-bottom: 2em;
-    padding-left: 1.5em;
 }
 
 #bottom-container {
@@ -91,8 +180,13 @@ h6 {
 }
 
 .bottom-logo-name {
+    font-family: 'Merriweather', serif;
     font-size: 3rem;
     margin: 1em 0;
+}
+
+.copyrights-and-credits {
+    padding-top: 2em;
 }
 
 .bottom-link {
@@ -100,55 +194,196 @@ h6 {
 }
 
 .bottom-link:hover {
-    text-decoration: underline;
+    color: #ACFFAD;
 }
 
-#footer {
+@media (max-width: 1080px) {
+    #bottom-container {
+        text-align: center;
+    }
+
+    .bottom-logo-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .bottom-logo-name {
+        padding: 0em;
+        font-size: 1.5rem;
+    }
+}
+
+/* about us page */
+
+#about-us-container {
     margin: 0;
-    padding: 1em 5em;
-    background-color: #50CB93;
+    padding: 2em 5em;
+    background-color: #ACFFAD;
 }
 
-.credit-link {
-    text-decoration: none;
+.about-us-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 1em 0;
+    padding: 1em 0;
+    background-color: #71EFA3;
 }
 
-.credit-link:hover {
-    text-decoration: underline;
+.company-profile-title {
+    font-size: 1.5rem;
 }
 
 /* products page */
 
 #products-details-container {
     margin: 0;
-    padding: 5em 5em;
+    padding: 2em 5em;
     background-color: #ACFFAD;
+}
+
+.products-title2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 1em 0;
+    padding: 1em 0;
+    background-color: #71EFA3;
 }
 
 .products-details {
     background-color: #71EFA3;
     margin: 0;
-    padding: 1em 1em;
+    padding: 0.5em 1em;
+}
+
+.products-details-title {
+    font-weight: 700;
+    padding: 1em 0;
+}
+
+.product-name {
+    font-weight: 600;
 }
 
 .products-details-column {
-    padding: 2em 4em;
+    padding: 1em 2em;
+}
+
+@media (max-width: 1080px) {
+    #products-details-container {
+        padding: 2em 2em;
+    }
+}
+
+@media (max-width:480) {
+    #products-details-container {
+        padding: 1em 1em;
+    }
 }
 
 /* contact-us-page */
 
-#middle-container {
-    background-image: url(../Images/pexels-quang-nguyen-vinh-2582652.jpg);
-    background-attachment: scroll;
+#contact-us-container2 {
     margin: 0;
     padding: 2em 5em;
     background-color: #ACFFAD;
 }
 
-.contact-form {
-    color: white;
+.contact-us-title2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 1em 0;
+    padding: 1em;
+    background-color: #71EFA3;
 }
 
-.contact-us-image {
-    margin-top: 5em;
+.contact-form {
+    padding: 0 4em;
+}
+
+.contact-form-title {
+    font-size: 1.6rem;
+}
+
+.contact-form-title2 {
+    font-size: 1.2rem;
+}
+
+.contact-address {
+    padding: 0 4em;
+}
+
+.contact-address-title {
+    font-size: 1.6rem;
+}
+
+.contact-address-description {
+    font-size: 1.2rem;
+}
+
+.address-title {
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-number-title {
+    font-weight: 600;
+    margin: 0;
+}
+
+.email-title {
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-number-link {
+    text-decoration: none;
+}
+
+.contact-number-link:hover {
+    color: #50CB93;
+}
+
+.email-link {
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: #50CB93;
+}
+
+.google-map {
+    margin: 1em 0 4em 0;
+}
+
+@media (max-width: 720px) {
+    .contact-address {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 0em;
+    }
+
+    .contact-address {
+        padding: 0em;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-us-title2 {
+        padding: 0em;
+    }
+
+    .contact-address {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 0em;
+    }
+
+    .contact-address {
+        padding: 0em;
+    }
 }

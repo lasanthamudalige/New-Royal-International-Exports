@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | New Royal International</title>
+    <title>Contact Us | New Royal International</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,14 +19,15 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <section id="navigation-bar">
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-xl navbar-dark">
+        <nav class="navbar navbar-expand-xxl navbar-dark ms-lg-auto ms-md-0">
             <div class="container-fluid">
-                <a class="navbar-brand navbar-heading" href="#">NEW ROYAL INTERNATIONAL EXPORTERS</a>
+                <a class="navbar-brand navbar-heading" href="index.html">NEW ROYAL INTERNATIONAL EXPORTERS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -48,105 +53,130 @@
         </nav>
     </section>
 
-    <section id="middle-container">
-        <div class="row">
-            <form class="needs-validation col-lg-6 contact-form">
-                <p class="text-center contact-us-title">Need further Information? Contact Us.</p>
+    <section id="contact-us-container2">
+        <p class="text-center contact-us-title2">Contact Us</p>
+        <div class="row contact-form-and-address">
+            <form action="contactform.php" method="post" class="needs-validation col-lg-6 contact-form myform" name="contact">
+                <p class="text-center contact-form-title">Contact Form</p>
+                <p class="text-center contact-form-title2">Need further Information? Contact Us.</p>
                 <div class="row justify-content-start">
-                    <div class="col-lg-6 col-md-5 input-group-lg text-center">
+                    <div class="col-lg-6 col-md-6 input-group-lg text-center">
                         <label for="name">Your Name:</label>
-                        <input type="text" class="form-control" id="name" aria-label="Your name" required>
+                        <input type="text" class="form-control" id="name" name="name" aria-label="Your name" required>
                     </div>
-                    <div class="col-lg-6 col-md-5 input-group-lg text-center">
+                    <div class="col-lg-6 col-md-6 input-group-lg text-center">
                         <label for="email">Your Email:</label>
-                        <input type="email" class="form-control" id="email" aria-label="Your Email" required>
+                        <input type="email" class="form-control" id="email" name="email" aria-label="Your Email" required>
                     </div>
                 </div>
                 <div class="row justify-content-start text-center">
-                    <div class="col-lg-6 col-md-5 input-group-lg text-center">
-                        <label for="">Your Subject:</label>
-                        <input type="text" class="form-control" aria-label="Subject" required>
+                    <div class="col-lg-6 col-md-6 input-group-lg text-center">
+                        <label for="subject">Your Subject:</label>
+                        <input type="text" class="form-control" id="subject" name="subject" aria-label="subject" required>
                     </div>
-                    <div class="col-lg-6 col-md-5 input-group-lg">
+                    <div class="col-lg-6 col-md-6 input-group-lg">
                         <label for="number">Your Phone Number:</label>
-                        <input type="text" class="form-control" aria-label="phone" required>
+                        <input type="text" class="form-control" id="number" name="number" aria-label="phone" required>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-6 text-center">
                         <label for="textarea">Your Message:</label>
-                        <textarea class="form-control" id="textarea" style="height: 100px" required></textarea>
+                        <textarea class="form-control" id="message" name="message" style="height: 100px" required></textarea>
                     </div>
                 </div>
                 <div class="row text-center col-lg-12">
                     <div class="submit-btn">
-                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-success" type="submit" name="submit" value="submit">Submit</button>
+                        <span class="output_message"></span>
                     </div>
                 </div>
             </form>
-            <div class="col-lg-6">
-                
+            <script src="js/script.js"></script>
+            <div class="col-lg-6 col-md-12 text-lg-start text-md-center contact-address">
+                <p class="text-center contact-address-title">Contact Address</p>
+                <p class="text-center contact-address-description">Get in touch with us. We’d love to hear from you!</p>
+                <div class="address">
+                    <p class="address-title">Our Location</p>
+                    <p> NEW ROYAL INTERNATIONAL EXPORTERS,<br>
+                        Mederigama Road,<br>
+                        Mawanella,<br>
+                        71500,<br>
+                        Sri Lanka</p>
+                </div>
+                <div class="contact-number">
+                    <p class="contact-number-title">Call us on </p>
+                    <p> <a class="link-dark contact-number-link" href="tel:+94775734823">+94775734823</a></p>
+                </div>
+                <div class="email-address">
+                    <p class="email-title">Get in touch </p>
+                    <p> <a class="link-dark email-link"
+                            href="mailto:newroyalintlk@hotmail.com">newroyalintlk@hotmail.com</a><br>
+                        <a class="link-dark email-link"
+                            href="mailto:priyanthamudalige@hotmail.com">priyanthamudalige@hotmail.com</a>
+                    </p>
+                </div>
             </div>
+        </div>
+        <div class="row google-map">
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA23dGTjcwXuBbQqDnxlyT9pU1A17uCU-0&q=Mederigama Rd, Mawanella 71500"
+                width="80%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
 
     </section>
 
     <section id="bottom-container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-5 justify-content-evenly">
                 <p class="bottom-logo-name">NEW ROYAL INTERNATIONAL EXPORTERS</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 justify-content-evenly">
                 <h6>Contact Us</h6>
                 <p>Address: <br>
                     NEW ROYAL INTERNATIONAL EXPORTERS,<br>
-                    Ranasinghe Lane,<br>
+                    Mederigama Road,<br>
                     Mawanella,<br>
                     71500,<br>
                     Sri Lanka
                 </p>
-                <p>Tel: <a class="bottom-link text-dark" href="tel:+94711324529">+94711324529</a>
+                <p>Tel: <a class="bottom-link link-dark" href="tel:+94775734823">+94775734823</a>
                 </p>Mail: <br>
-                <a class="bottom-link text-dark"
+                <a class="bottom-link link-dark"
                     href="mailto:newroyalintlk@hotmail.com">newroyalintlk@hotmail.com</a><br>
-                <a class="bottom-link text-dark"
+                <a class="bottom-link link-dark"
                     href="mailto:priyanthamudalige@hotmail.com">priyanthamudalige@hotmail.com</a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <h6>Products</h6>
                 <p>
-                    <a class="bottom-link text-dark" href="">Tea</a>
+                    <a class="bottom-link link-dark" href="products.html#tea">Tea</a>
                 </p>
                 <p>
-                    <a class="bottom-link text-dark" href="">Spices</a>
+                    <a class="bottom-link link-dark" href="products.html#spices">Spices</a>
                 </p>
                 <p>
-                    <a class="bottom-link text-dark" href="">Coffee</a>
+                    <a class="bottom-link link-dark" href="products.html#coffee">Coffee</a>
                 </p>
                 <p>
-                    <a class="bottom-link text-dark" href="">Gems</a>
+                    <a class="bottom-link link-dark" href="products.html#gems">Gems</a>
                 </p>
             </div>
         </div>
-    </section>
-
-
-    <section id="footer">
-        <hr>
         <div class="copyrights-and-credits">
+            <hr>
             <div class="row text-center">
                 <div class="bottom-column col-lg-6">
                     <p>© Copyright 2021 New Royal International Exporters</p>
                 </div>
                 <div class="bottom-column col-lg-6">
-                    <p class="credit">Website by <a class="credit-link text-dark"
+                    <p class="credit">Website by <a class="bottom-link link-dark"
                             href="https://lasantha-kumara.github.io/personal-website/">Lasantha Mudalige</a>
                     </p>
                 </div>
             </div>
         </div>
-
-
+    </section>
 </body>
 
 </html>
